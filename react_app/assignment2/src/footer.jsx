@@ -1,3 +1,5 @@
+import './footer.css'
+
 export function Footer(props) {
     // I don't fully understand the other notation for if/else statements so just did it the way that makes sense to me
     let message;
