@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg';
 import { Header } from './Header';
 import reactLogo from './assets/react.svg';
 
+// code from lessons and React, but added remove buttons
 function App() {
   // Define the TODO models
   const [todos, setTodos] = useState([]);
@@ -23,7 +24,9 @@ function App() {
       return <li key={"todo-" + i} className="todo-item">
         <input type="checkbox" className="todo-item__checkbox" data-id={i} id={"todo-" + i} />
         <label htmlFor={"todo-" + i} className="todo-item__label">{item.name}</label>
-      </li>
+        {/* REMOVE BUTTON (added) */}
+        <button className="todo-item__remove-button">Remove</button>
+      </li >
     })
   }
 
@@ -55,7 +58,7 @@ function App() {
 
   return (
     <>
-      <Header title="Hello World!" message="Thanks for visiting my site." />
+      <Header title="Welcome to my website!" message="Thanks for visiting my site." />
 
       <main>
         <section>
