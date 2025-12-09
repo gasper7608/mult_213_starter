@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg';
 import { Header } from './Header';
 import reactLogo from './assets/react.svg';
 import { Todo } from './TodoList';
+import { Card } from './card';
+import { Footer } from './footer';
 
 // code from lessons and React, but took some into ToDoList component
 function App() {
@@ -69,7 +71,19 @@ function App() {
             {listContent}
           </ul>
         </section>
+
+        <section>
+          <h2>Example Card</h2>
+          <Card
+            title="My Card Title"
+            subtitle="My Card Subtitle"
+            content="This is the content of my card."
+            image="https://via.placeholder.com/400x200?text=Example+Image"
+          />
+        </section>
       </main>
+
+      <Footer message="Contact me at contact@mywebsite.com" />
 
       <footer>
         <p className="read-the-docs">
